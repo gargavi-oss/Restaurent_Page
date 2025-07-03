@@ -1,12 +1,12 @@
 const content = document.querySelector(".content");
 
 export function menu() {
-    content.innerHTML = "";  // Clear previous content
+    content.innerHTML = "";  
     content.classList.add("menuClass"); 
-      // Correct class addition
+    
       content.classList.remove("contactClass");
 
-    // Create Menu Containers
+
     const menuContainer1 = document.createElement("div");
     const menuContainer2 = document.createElement("div");
     const menuContainer3 = document.createElement("div");
@@ -14,7 +14,6 @@ export function menu() {
     const menuContainer5 = document.createElement("div");
     const menuContainer6 = document.createElement("div");
 
-    // Add classes to containers
     menuContainer1.classList.add("menuContainer");
     menuContainer2.classList.add("menuContainer");
     menuContainer3.classList.add("menuContainer");
@@ -22,7 +21,6 @@ export function menu() {
     menuContainer5.classList.add("menuContainer");
     menuContainer6.classList.add("menuContainer");
 
-    // Append containers to content
     content.appendChild(menuContainer1);
     content.appendChild(menuContainer2);
     content.appendChild(menuContainer3);
@@ -30,7 +28,6 @@ export function menu() {
     content.appendChild(menuContainer5);
     content.appendChild(menuContainer6);
 
-    // Add menu heading
     const headingMenu1 = document.createElement("h1");
     headingMenu1.innerHTML = "📜 The Rustic Bar & Grill Menu 🍽️";
     const headingMenu2 = document.createElement("h1");
@@ -47,7 +44,6 @@ export function menu() {
     
 
 
-    // Append heading to the first container
     menuContainer1.appendChild(headingMenu1);
     menuContainer2.appendChild(headingMenu2);
     menuContainer3.appendChild(headingMenu3);
